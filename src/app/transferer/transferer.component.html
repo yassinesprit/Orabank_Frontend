@@ -28,7 +28,34 @@
                   </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  <div class="accordion-body">
+                    <form class="row g-3 needs-validation was-validated" novalidate>
+
+                    <div class="col-12">
+                      <label for="alias" class="form-label">Alias</label>
+                      <div class="input-group has-validation">
+                        <input type="text" name="alias" class="form-control" id="alias" placeholder="Alias" required>
+                        <div class="invalid-feedback">Saisir votre Alias.</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label for="montant" class="form-label">Montant</label>
+                      <div class="input-group has-validation">
+                        <input type="number" name="montant" class="form-control" id="montant" placeholder="Montant" required>
+                        <div class="invalid-feedback">Saisir votre montant.</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label for="note" class="form-label">Note</label>
+                      <div class="input-group has-validation">
+                        <input type="text" name="note" class="form-control" id="note" placeholder="Note" >
+                        <div class="invalid-feedback">Saisir votre note.</div>
+                      </div>
+                    </div>
+
+                      <button class="btn btn-primary-green w-100" type="submit">Continuer</button>
+                  </form>
+                  </div>
                 </div>
               </div>
 
@@ -39,7 +66,56 @@
                   </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  <div class="accordion-body">
+                    <form class="row g-3 needs-validation was-validated" novalidate>
+
+                      <div class="col-12">
+                        <label for="iban" class="form-label">IBAN</label>
+                        <div class="input-group has-validation">
+                          <input type="text" name="iban" class="form-control" id="iban" placeholder="IBAN" required>
+                          <div class="invalid-feedback">Saisir votre IBAN.</div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="pays" class="form-label">Pays de la banque</label>
+                        <div class="input-group has-validation">
+                          <select name="pays" class="form-select" id="pays" required>
+                            <option value="" selected disabled>Choisir un pays</option>
+                            <option value="France">France</option>
+                            <option value="Canada">Canada</option>
+                            <option value="United States">United States</option>
+                            <!-- Add more countries as needed -->
+                          </select>
+                          <div class="invalid-feedback">Veuillez sélectionner le pays de la banque.</div>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="nom" class="form-label">Nom de la banque</label>
+                        <div class="input-group has-validation">
+                          <input type="text" name="nom" class="form-control" id="nom" placeholder="Nom de la banque" required>
+                          <div class="invalid-feedback">Saisir votre Nom de la banque.</div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="montant_iban" class="form-label">Montant</label>
+                        <div class="input-group has-validation">
+                          <input type="number" name="montant_iban" class="form-control" id="montant_iban" placeholder="Montant" required>
+                          <div class="invalid-feedback">Saisir votre montant.</div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="note_iban" class="form-label">Note</label>
+                        <div class="input-group has-validation">
+                          <input type="text" name="note_iban" class="form-control" id="note_iban" placeholder="Note" >
+                          <div class="invalid-feedback">Saisir votre note.</div>
+                        </div>
+                      </div>
+
+                      <button class="btn btn-primary-green w-100" type="submit">Continuer</button>
+                    </form>
+
+                  </div>
                 </div>
               </div>
               <div class="accordion-item">
@@ -49,9 +125,94 @@
                   </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div class="accordion-body">
+                    <form class="row g-3 needs-validation was-validated" novalidate>
+
+                      <div class="col-12">
+                        <label for="compte" class="form-label">Numero Compte</label>
+                        <div class="input-group has-validation">
+                          <input type="text" name="compte" class="form-control" id="compte" placeholder="Numero Compte" required>
+                          <div class="invalid-feedback">Saisir votre Numero Compte.</div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="pays_autre" class="form-label">Pays de la banque</label>
+                        <div class="input-group has-validation">
+                            <select name="pays_autre" class="form-select" id="pays_autre" required>
+                              <option value="" selected disabled>Choisir un pays</option>
+                              <option value="France">France</option>
+                              <option value="Canada">Canada</option>
+                              <option value="United States">United States</option>
+                              <!-- Add more countries as needed -->
+                            </select>
+                            <div class="invalid-feedback">Saisir votre Pays de la banque.</div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="nom_if" class="form-label">Nom de l'institut financiere'</label>
+                        <div class="input-group has-validation">
+                            <select name="nom_if" class="form-select" id="nom_if" required>
+                              <option value="" selected disabled>Choisir votre institut financiere.</option>
+                              <option value="France">bfi</option>
+                              <option value="Canada">vermeg</option>
+                              <!-- Add more countries as needed -->
+                            </select>
+                          <div class="invalid-feedback">Saisir votre Nom de l'institut financiere'.</div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="montant_autre" class="form-label">Montant</label>
+                        <div class="input-group has-validation">
+                          <input type="number" name="montant_autre" class="form-control" id="montant_autre" placeholder="Montant" required>
+                          <div class="invalid-feedback">Saisir votre montant.</div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="note_autre" class="form-label">Note</label>
+                        <div class="input-group has-validation">
+                          <input type="text" name="note_autre" class="form-control" id="note_autre" placeholder="Note" >
+                          <div class="invalid-feedback">Saisir votre note.</div>
+                        </div>
+                      </div>
+
+                      <button class="btn btn-primary-green w-100" type="submit">Continuer</button>
+                    </form>
+
+                  </div>
                 </div>
               </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Ajouter Contact
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <form class="row g-3 needs-validation was-validated" novalidate>
+
+                      <div class="col-12">
+                        <label for="nomPrenom" class="form-label">Nom et Prenom</label>
+                        <div class="input-group has-validation">
+                          <input type="text" name="nomPrenom" class="form-control" id="nomPrenom" placeholder="Nom et Prenom" required>
+                          <div class="invalid-feedback">Saisir votre Nom et Prenom.</div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="num_compte" class="form-label">Numero de Compte</label>
+                        <div class="input-group has-validation">
+                          <input type="number" name="num_compte" class="form-control" id="num_compte" placeholder="Numero de Compte" required>
+                          <div class="invalid-feedback">Saisir votre Numero de Compte.</div>
+                        </div>
+                      </div>
+
+
+                      <button class="btn btn-primary-green w-100" type="submit">Continuer</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
             </div><!-- End Accordion without outline borders -->
 
           </div>

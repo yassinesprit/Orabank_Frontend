@@ -4,6 +4,7 @@ import {LoginComponent} from "./UserManagement/login/login.component";
 import {HomeComponent} from "./home/home.component";
 import {TransactionsComponent} from "./transactions/transactions.component";
 import {TransfererComponent} from "./transferer/transferer.component";
+import {AliasComponent} from "./alias/alias.component";
 
 const routes: Routes = [
   {
@@ -19,6 +20,11 @@ const routes: Routes = [
   {
     path: 'transferer',
     component: TransfererComponent
+  }
+  ,
+  {
+    path: 'alias',
+    component: AliasComponent
   }
   ,
   {

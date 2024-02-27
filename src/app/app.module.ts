@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { TransfererComponent } from './transferer/transferer.component';
+import { AliasComponent } from './alias/alias.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TransfererComponent } from './transferer/transferer.component';
     LoginComponent,
     HomeComponent,
     TransactionsComponent,
-    TransfererComponent
+    TransfererComponent,
+    AliasComponent
   ],
   imports: [
     BrowserModule,
