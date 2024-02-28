@@ -7,6 +7,10 @@ import {TransfererComponent} from "./transferer/transferer.component";
 import {AliasComponent} from "./alias/alias.component";
 
 const routes: Routes = [
+  { path: '',
+    pathMatch:"full",
+    redirectTo: 'login'
+  },
   {
     path: 'home',
     component: HomeComponent
